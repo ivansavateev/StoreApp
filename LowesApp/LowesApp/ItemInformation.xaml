@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LowesApp.ItemInformation" Title="All info about items">
+    <StackLayout>
+        <Label Text="Aisle Number" />        
+        <Entry x:Name="EntryAisle" Text="{Binding Aisle}" FontSize="Large" WidthRequest="70"/>
+        <Label Text="Bay Number" />
+        <Entry x:Name="EntryBay" Text="{Binding Bay}" FontSize="Large" WidthRequest="70"/>
+        <Label Text="Item Number" />
+        <Entry x:Name="EntryItemName" Text="{Binding ItemName}" FontSize="Large" WidthRequest="70"/>
+        <Label Text="Location" />
+        <Entry x:Name="EntryLocation" Text="{Binding Location}" FontSize="Large" WidthRequest="70"/>
+        <Button Text="Update Item" Clicked="UpdateItem" />
+        <Button Text="Delete Item" Clicked="DeleteItem" />
+        <!--<StackLayout Orientation="Horizontal">
+            <Button Text="Сохранить" Clicked="SaveFriend" />
+            <Button Text="Удалить" Clicked="DeleteFriend" />
+            <Button Text="Отмена" Clicked="Cancel" />
+            <Button Text="Создать еще одно поле" Clicked="CreateOneMoreField" />
+        </StackLayout>-->
+    </StackLayout>
+</ContentPage>

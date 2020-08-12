@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LowesApp.CreateItem" Title="CreateItem">
+    <NavigationPage.TitleView>
+        <Label Text="Create Item" HorizontalOptions="Start"/>
+    </NavigationPage.TitleView>
+    <StackLayout>
+        <StackLayout Margin="20" Orientation = "Horizontal">
+            <Label Text = "Aisle" HorizontalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="EntryAisle" Text="" FontSize="Large" WidthRequest="70"/>        
+            <Label Text = "Bay" HorizontalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="EntryBay" Text="" FontSize="Large" WidthRequest="70"/>
+            <Label Text = "Location" HorizontalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="EntryLocation" Text="" FontSize="Large" WidthRequest="70"/>
+        </StackLayout>
+        <StackLayout Margin="20" Orientation = "Horizontal">
+            <Label Text = "Item number" HorizontalOptions="Center" FontSize="Large"/>
+            <Entry x:Name="EntryItemName" Text="" FontSize="Large" HorizontalOptions="StartAndExpand" WidthRequest="160" Keyboard="Numeric"/>            
+        </StackLayout>
+        <Button Text="Save Item" Clicked="SaveItem" />
+        <Label Text="Last Items"/>
+        <ListView x:Name="LastItemsList" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding ItemName}" FontSize="Medium" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
