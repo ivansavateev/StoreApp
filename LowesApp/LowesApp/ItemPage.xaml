@@ -8,7 +8,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal" BackgroundColor="{Binding Location,Converter={StaticResource LocationToColorConverter}}">
                                     <Label Text="{Binding ItemName}" FontSize="Medium" />
                                 </StackLayout>
                             </ViewCell.View>

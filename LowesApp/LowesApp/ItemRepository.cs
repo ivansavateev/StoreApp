@@ -125,5 +125,14 @@ namespace LowesApp
         //        SaveItem(item);
         //    }
         //}
+
+        public bool DownStockContaining(Item itemTopStock)//TopStockItem
+        {
+            foreach(var item in _database.Table<Item>().Where(x => x.IsTopStock == false && x.Aisle == itemTopStock.Aisle && x.Bay == itemTopStock.Bay && x.ItemName == itemTopStock.ItemName))
+            {                
+                    return true;
+            }
+            return false;
+        }
     }
 }

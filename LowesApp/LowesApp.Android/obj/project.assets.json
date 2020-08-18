@@ -2173,11 +2173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp.Android\\LowesApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp.Android\\LowesApp.Android.csproj",
       "projectName": "LowesApp.Android",
-      "projectPath": "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp.Android\\LowesApp.Android.csproj",
+      "projectPath": "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp.Android\\LowesApp.Android.csproj",
       "packagesPath": "C:\\Users\\isava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2198,8 +2198,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp\\LowesApp.csproj": {
-              "projectPath": "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp\\LowesApp.csproj"
+            "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp\\LowesApp.csproj": {
+              "projectPath": "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp\\LowesApp.csproj"
             }
           }
         }

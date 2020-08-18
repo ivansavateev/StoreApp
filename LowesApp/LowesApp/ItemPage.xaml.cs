@@ -19,9 +19,8 @@ namespace LowesApp
 
         protected override void OnAppearing()
         {
-            string[] aisleBay = new string[2];
-            aisleBay = (string[])BindingContext;
-            ItemList.ItemsSource = App.Database.GetCertainItems(aisleBay[0],aisleBay[1], MainPage.IsTopStock);
+
+            ItemList.ItemsSource = PopulateUIItems();
             string aijsnhdjan = BayPage.BindingContextProperty.ToString();
             
             base.OnAppearing();
@@ -32,6 +31,28 @@ namespace LowesApp
             ItemInformation itemInformation = new ItemInformation();
             itemInformation.BindingContext = (Item)e.SelectedItem;
             await Navigation.PushAsync(itemInformation);
+        }
+
+        private List<UIItem> PopulateUIItems()
+        {
+            string[] aisleBay = new string[2];
+            aisleBay = (string[])BindingContext;
+            List<Item> itemsList = App.Database.GetCertainItems(aisleBay[0], aisleBay[1], MainPage.IsTopStock);
+            List<UIItem> uiItemsList = new List<UIItem>();
+            foreach (Item item in itemsList)
+            {
+                bool greenBackground = default;
+                if(item.Location == "")
+                {
+                    greenBackground = false;
+                } else
+                {
+                    greenBackground = true;
+                }
+                UIItem uiItem = new UIItem(item, greenBackground, !App.Database.DownStockContaining(item));
+                uiItemsList.Add(uiItem);
+            }
+            return uiItemsList;
         }
     }
 }

@@ -873,11 +873,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp\\LowesApp.csproj",
+      "projectUniqueName": "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp\\LowesApp.csproj",
       "projectName": "LowesApp",
-      "projectPath": "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp\\LowesApp.csproj",
+      "projectPath": "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp\\LowesApp.csproj",
       "packagesPath": "C:\\Users\\isava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isava\\source\\repos\\LowesApp\\LowesApp\\LowesApp\\obj\\",
+      "outputPath": "C:\\Users\\isava\\source\\repos\\StoreApp\\LowesApp\\LowesApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
